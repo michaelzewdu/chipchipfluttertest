@@ -44,7 +44,9 @@ _$ProductsWithMetaDataImpl _$$ProductsWithMetaDataImplFromJson(
     _$ProductsWithMetaDataImpl(
       ok: json['ok'] as bool,
       meta_data: MetaData.fromJson(json['meta_data'] as Map<String, dynamic>),
-      data: json['data'] as List<dynamic>?,
+      data: (json['data'] as List<dynamic>?)
+          ?.map((e) => Products.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
 
 Map<String, dynamic> _$$ProductsWithMetaDataImplToJson(

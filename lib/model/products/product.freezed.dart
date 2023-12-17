@@ -32,9 +32,9 @@ mixin _$Products {
   String get product_status => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   String get measuring_unit => throw _privateConstructorUsedError;
-  String get group_count => throw _privateConstructorUsedError;
+  int get group_count => throw _privateConstructorUsedError;
   String get discount => throw _privateConstructorUsedError;
-  String get favorite => throw _privateConstructorUsedError;
+  bool get favorite => throw _privateConstructorUsedError;
   String get vendor_id => throw _privateConstructorUsedError;
   String get category_id => throw _privateConstructorUsedError;
   String get created_at => throw _privateConstructorUsedError;
@@ -64,9 +64,9 @@ abstract class $ProductsCopyWith<$Res> {
       String product_status,
       String name,
       String measuring_unit,
-      String group_count,
+      int group_count,
       String discount,
-      String favorite,
+      bool favorite,
       String vendor_id,
       String category_id,
       String created_at,
@@ -161,7 +161,7 @@ class _$ProductsCopyWithImpl<$Res, $Val extends Products>
       group_count: null == group_count
           ? _value.group_count
           : group_count // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       discount: null == discount
           ? _value.discount
           : discount // ignore: cast_nullable_to_non_nullable
@@ -169,7 +169,7 @@ class _$ProductsCopyWithImpl<$Res, $Val extends Products>
       favorite: null == favorite
           ? _value.favorite
           : favorite // ignore: cast_nullable_to_non_nullable
-              as String,
+              as bool,
       vendor_id: null == vendor_id
           ? _value.vendor_id
           : vendor_id // ignore: cast_nullable_to_non_nullable
@@ -227,9 +227,9 @@ abstract class _$$ProductsImplCopyWith<$Res>
       String product_status,
       String name,
       String measuring_unit,
-      String group_count,
+      int group_count,
       String discount,
-      String favorite,
+      bool favorite,
       String vendor_id,
       String category_id,
       String created_at,
@@ -324,7 +324,7 @@ class __$$ProductsImplCopyWithImpl<$Res>
       group_count: null == group_count
           ? _value.group_count
           : group_count // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       discount: null == discount
           ? _value.discount
           : discount // ignore: cast_nullable_to_non_nullable
@@ -332,7 +332,7 @@ class __$$ProductsImplCopyWithImpl<$Res>
       favorite: null == favorite
           ? _value.favorite
           : favorite // ignore: cast_nullable_to_non_nullable
-              as String,
+              as bool,
       vendor_id: null == vendor_id
           ? _value.vendor_id
           : vendor_id // ignore: cast_nullable_to_non_nullable
@@ -421,11 +421,11 @@ class _$ProductsImpl implements _Products {
   @override
   final String measuring_unit;
   @override
-  final String group_count;
+  final int group_count;
   @override
   final String discount;
   @override
-  final String favorite;
+  final bool favorite;
   @override
   final String vendor_id;
   @override
@@ -535,9 +535,9 @@ abstract class _Products implements Products {
       required final String product_status,
       required final String name,
       required final String measuring_unit,
-      required final String group_count,
+      required final int group_count,
       required final String discount,
-      required final String favorite,
+      required final bool favorite,
       required final String vendor_id,
       required final String category_id,
       required final String created_at,
@@ -571,11 +571,11 @@ abstract class _Products implements Products {
   @override
   String get measuring_unit;
   @override
-  String get group_count;
+  int get group_count;
   @override
   String get discount;
   @override
-  String get favorite;
+  bool get favorite;
   @override
   String get vendor_id;
   @override

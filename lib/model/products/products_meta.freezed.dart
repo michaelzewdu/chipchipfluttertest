@@ -461,7 +461,7 @@ ProductsWithMetaData _$ProductsWithMetaDataFromJson(Map<String, dynamic> json) {
 mixin _$ProductsWithMetaData {
   bool get ok => throw _privateConstructorUsedError;
   MetaData get meta_data => throw _privateConstructorUsedError;
-  List<dynamic>? get data => throw _privateConstructorUsedError;
+  List<Products>? get data => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -475,7 +475,7 @@ abstract class $ProductsWithMetaDataCopyWith<$Res> {
           $Res Function(ProductsWithMetaData) then) =
       _$ProductsWithMetaDataCopyWithImpl<$Res, ProductsWithMetaData>;
   @useResult
-  $Res call({bool ok, MetaData meta_data, List<dynamic>? data});
+  $Res call({bool ok, MetaData meta_data, List<Products>? data});
 
   $MetaDataCopyWith<$Res> get meta_data;
 }
@@ -510,7 +510,7 @@ class _$ProductsWithMetaDataCopyWithImpl<$Res,
       data: freezed == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
-              as List<dynamic>?,
+              as List<Products>?,
     ) as $Val);
   }
 
@@ -531,7 +531,7 @@ abstract class _$$ProductsWithMetaDataImplCopyWith<$Res>
       __$$ProductsWithMetaDataImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({bool ok, MetaData meta_data, List<dynamic>? data});
+  $Res call({bool ok, MetaData meta_data, List<Products>? data});
 
   @override
   $MetaDataCopyWith<$Res> get meta_data;
@@ -564,7 +564,7 @@ class __$$ProductsWithMetaDataImplCopyWithImpl<$Res>
       data: freezed == data
           ? _value._data
           : data // ignore: cast_nullable_to_non_nullable
-              as List<dynamic>?,
+              as List<Products>?,
     ));
   }
 }
@@ -573,7 +573,7 @@ class __$$ProductsWithMetaDataImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$ProductsWithMetaDataImpl implements _ProductsWithMetaData {
   const _$ProductsWithMetaDataImpl(
-      {required this.ok, required this.meta_data, final List<dynamic>? data})
+      {required this.ok, required this.meta_data, final List<Products>? data})
       : _data = data;
 
   factory _$ProductsWithMetaDataImpl.fromJson(Map<String, dynamic> json) =>
@@ -583,9 +583,9 @@ class _$ProductsWithMetaDataImpl implements _ProductsWithMetaData {
   final bool ok;
   @override
   final MetaData meta_data;
-  final List<dynamic>? _data;
+  final List<Products>? _data;
   @override
-  List<dynamic>? get data {
+  List<Products>? get data {
     final value = _data;
     if (value == null) return null;
     if (_data is EqualUnmodifiableListView) return _data;
@@ -634,7 +634,7 @@ abstract class _ProductsWithMetaData implements ProductsWithMetaData {
   const factory _ProductsWithMetaData(
       {required final bool ok,
       required final MetaData meta_data,
-      final List<dynamic>? data}) = _$ProductsWithMetaDataImpl;
+      final List<Products>? data}) = _$ProductsWithMetaDataImpl;
 
   factory _ProductsWithMetaData.fromJson(Map<String, dynamic> json) =
       _$ProductsWithMetaDataImpl.fromJson;
@@ -644,7 +644,7 @@ abstract class _ProductsWithMetaData implements ProductsWithMetaData {
   @override
   MetaData get meta_data;
   @override
-  List<dynamic>? get data;
+  List<Products>? get data;
   @override
   @JsonKey(ignore: true)
   _$$ProductsWithMetaDataImplCopyWith<_$ProductsWithMetaDataImpl>

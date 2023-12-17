@@ -1,3 +1,4 @@
+import 'package:chipchiptest/model/products/product.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'products_meta.freezed.dart';
@@ -33,7 +34,7 @@ class ProductsWithMetaData with _$ProductsWithMetaData {
   const factory ProductsWithMetaData(
       {required bool ok,
       required MetaData meta_data,
-      List? data}) = _ProductsWithMetaData;
+      List<Products>? data}) = _ProductsWithMetaData;
 
   factory ProductsWithMetaData.fromJson(Map<String, dynamic> json) =>
       _$ProductsWithMetaDataFromJson(json);

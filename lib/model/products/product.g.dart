@@ -9,8 +9,8 @@ part of 'product.dart';
 _$ProductsImpl _$$ProductsImplFromJson(Map<String, dynamic> json) =>
     _$ProductsImpl(
       bulk_deals: json['bulk_deals'],
-      single_deal: SingleDeal.fromJson(
-          Map<String, String>.from(json['single_deal'] as Map)),
+      single_deal:
+          SingleDeal.fromJson(json['single_deal'] as Map<String, dynamic>),
       group_deal:
           GroupDeal.fromJson(json['group_deal'] as Map<String, dynamic>),
       short_description: json['short_description'] as String,
@@ -24,9 +24,9 @@ _$ProductsImpl _$$ProductsImplFromJson(Map<String, dynamic> json) =>
       product_status: json['product_status'] as String,
       name: json['name'] as String,
       measuring_unit: json['measuring_unit'] as String,
-      group_count: json['group_count'] as String,
+      group_count: json['group_count'] as int,
       discount: json['discount'] as String,
-      favorite: json['favorite'] as String,
+      favorite: json['favorite'] as bool,
       vendor_id: json['vendor_id'] as String,
       category_id: json['category_id'] as String,
       created_at: json['created_at'] as String,

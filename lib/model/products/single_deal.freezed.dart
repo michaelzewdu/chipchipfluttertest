@@ -21,7 +21,7 @@ SingleDeal _$SingleDealFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$SingleDeal {
   String get original_price => throw _privateConstructorUsedError;
-  String get available_quantity => throw _privateConstructorUsedError;
+  int get available_quantity => throw _privateConstructorUsedError;
   String get id => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -36,7 +36,7 @@ abstract class $SingleDealCopyWith<$Res> {
           SingleDeal value, $Res Function(SingleDeal) then) =
       _$SingleDealCopyWithImpl<$Res, SingleDeal>;
   @useResult
-  $Res call({String original_price, String available_quantity, String id});
+  $Res call({String original_price, int available_quantity, String id});
 }
 
 /// @nodoc
@@ -64,7 +64,7 @@ class _$SingleDealCopyWithImpl<$Res, $Val extends SingleDeal>
       available_quantity: null == available_quantity
           ? _value.available_quantity
           : available_quantity // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -81,7 +81,7 @@ abstract class _$$SingleDealImplCopyWith<$Res>
       __$$SingleDealImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String original_price, String available_quantity, String id});
+  $Res call({String original_price, int available_quantity, String id});
 }
 
 /// @nodoc
@@ -107,7 +107,7 @@ class __$$SingleDealImplCopyWithImpl<$Res>
       available_quantity: null == available_quantity
           ? _value.available_quantity
           : available_quantity // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -130,7 +130,7 @@ class _$SingleDealImpl implements _SingleDeal {
   @override
   final String original_price;
   @override
-  final String available_quantity;
+  final int available_quantity;
   @override
   final String id;
 
@@ -173,7 +173,7 @@ class _$SingleDealImpl implements _SingleDeal {
 abstract class _SingleDeal implements SingleDeal {
   factory _SingleDeal(
       {required final String original_price,
-      required final String available_quantity,
+      required final int available_quantity,
       required final String id}) = _$SingleDealImpl;
 
   factory _SingleDeal.fromJson(Map<String, dynamic> json) =
@@ -182,7 +182,7 @@ abstract class _SingleDeal implements SingleDeal {
   @override
   String get original_price;
   @override
-  String get available_quantity;
+  int get available_quantity;
   @override
   String get id;
   @override

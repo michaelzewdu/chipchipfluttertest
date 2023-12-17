@@ -9,7 +9,7 @@ part of 'single_deal.dart';
 _$SingleDealImpl _$$SingleDealImplFromJson(Map<String, dynamic> json) =>
     _$SingleDealImpl(
       original_price: json['original_price'] as String,
-      available_quantity: json['available_quantity'] as String,
+      available_quantity: json['available_quantity'] as int,
       id: json['id'] as String,
     );
 
